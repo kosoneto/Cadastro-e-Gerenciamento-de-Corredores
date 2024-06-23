@@ -1,0 +1,72 @@
+/* Define o estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte */
+    background-image: url('./imagens/fundo-4.png'); /* Define a imagem de fundo */
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat; /* Evita a repetição da imagem de fundo */
+    display: flex; /* Usa flexbox para alinhar conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Define a altura para ocupar toda a altura da janela */
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove preenchimento */
+    text-align: center; /* Alinha o texto ao centro */
+    color: white; /* Cor do texto */
+}
+h1 {
+    color: white; /* Cor do texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra do texto */
+    margin-bottom: 20px; /* Espaçamento inferior */
+
+}
+/* Define o estilo para o conteúdo central */
+.center-content {
+    background-color: rgba(255, 255, 255, 0.5); /* Fundo semi-transparente */
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Estilo para botões */
+button {
+    background-color: #4CAF50; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda */
+    padding: 15px 32px; /* Preenchimento interno */
+    text-align: center; /* Alinhamento do texto */
+    text-decoration: none; /* Remove decoração do texto */
+    display: inline-block; /* Mostra como um bloco em linha */
+    font-size: 16px; /* Tamanho da fonte */
+    margin: 10px 2px; /* Margem externa */
+    cursor: pointer; /* Cursor do mouse */
+    border-radius: 12px; /* Bordas arredondadas */
+}
+
+/* Estilo para botões quando o mouse passa por cima */
+button:hover {
+    background-color: #45a049; /* Cor de fundo alterada */
+}
+
+/* Estilo para tabelas */
+table {
+    border-collapse: collapse; /* Colapso das bordas da tabela */
+    width: 100%; /* Largura da tabela */
+    background-color: rgba(54, 53, 53, 0.7); /* Cor de fundo semi-transparente */
+    border-radius: 10px;
+}
+
+/* Estilo para células de cabeçalho e células de dados */
+th, td {
+    border: 1px solid #dddddd; /* Borda das células */
+    text-align: left; /* Alinhamento do texto */
+    padding: 8px; /* Espaçamento interno */
+}
+
+/* Estilo para células de cabeçalho */
+th {
+    background-color: #4CAF50; /* Cor de fundo */
+    color: white; /* Cor do texto */
+}

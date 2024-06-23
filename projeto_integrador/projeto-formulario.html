@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projeto.css">
+    <title>Minha Corrida</title>
+</head>
+<body>
+    <div id="formulario">
+        <h1></h1> <br>
+        <h3>Complete os campos com suas informações</h3>
+        <form action="process_form.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" id="sobrenome" name="sobrenome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+
+            <label for="Atleta"><strong>Atleta</strong></label>
+            <select id="Atleta" name="Atleta" required>
+                <option selected disabled value="">Selecione</option>
+                <option>Amador</option>
+                <option>Profissional</option>
+            </select>
+
+            <label for="data_nascimento"><strong>Data de Nascimento:</strong></label>
+            <input type="date" id="data_nascimento" name="data_nascimento">
+
+            <label for="pace"><strong>Pace Médio</strong></label>
+            <select id="pace" name="pace" required>
+                <option selected disabled value="">Selecione</option>
+                <option value="3-4">3 a 4 min/km</option>
+                <option value="5-6">5 a 6 min/km</option>
+                <option value="7-8">7 a 8 min/km</option>
+            </select>
+
+            <fieldset>
+                <legend><strong>Selecione a categoria:</strong></legend>
+                <div class="checkbox-group">
+                    <div>
+                        <input type="checkbox" id="distancia1" name="distancia[]" value="5KM">
+                        <label for="distancia1">5KM</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="distancia2" name="distancia[]" value="10K">
+                        <label for="distancia2">10K</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="distancia3" name="distancia[]" value="21K">
+                        <label for="distancia3">21K</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="distancia4" name="distancia[]" value="42K">
+                        <label for="distancia4">42K</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="distancia5" name="distancia[]" value="Ultra 60K">
+                        <label for="distancia5">Ultra 60K</label>
+                    </div>
+                </div>
+            </fieldset><br>
+
+            <label for="tamanho_camisa"><strong>Tamanho da Camisa</strong></label>
+            <select id="tamanho_camisa" name="tamanho_camisa" required>
+                <option selected disabled value="">Selecione</option>
+                <option value="P">P</option>
+                <option value="M">M</option>
+                <option value="G">G</option>
+                <option value="GG">GG</option>
+                <option value="baby_look_p">Baby Look P</option>
+                <option value="baby_look_m">Baby Look M</option>
+                <option value="baby_look_g">Baby Look G</option>
+            </select>
+
+            <label for="equipe"><strong>Equipe/Patrocinador:</strong></label>
+            <input type="text" id="equipe" name="equipe">
+
+            <label for="forma_pagamento"><strong>Forma de pagamento</strong></label>
+            <select id="forma_pagamento" name="forma_pagamento" required>
+                <option selected disabled value="">Selecione</option>
+                <option value="Gratis">Grátis</option>
+            </select>
+
+            <div class="campo">
+                <input type="checkbox" id="termos_uso" name="termos_uso" required>
+                <label for="termos_uso">Li e concordo com os termos de uso</label>
+            </div>
+            <button type="submit">Concluir Cadastro</button>
+        </form>
+    </div>
+</body>
+</html>
